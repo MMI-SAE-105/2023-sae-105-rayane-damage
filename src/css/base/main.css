@@ -11,7 +11,13 @@ body {
     line-height: 1;
     background-color: var(--gray-dark);
 }
-
+li{
+    list-style-type: none;
+}
+a{
+    color: var(--black);
+    text-decoration: none;
+}
 
 h1{
     font-family: var(--h1);
