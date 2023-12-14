@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuOpen : false}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,13 @@
     <header class="header">
         <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
         <button class="header__btn menu__btn"></button>
+        <nav :class="menuOpen ? 'menu--shown' : 'menu--hidden' ">
+            <ul class="menu__list">
+                <li><a href="archi.html" class="menu__link">Jean Prouvé</a> </li>
+                <li><a href="infos.html" class="menu__link">L'Exposition</a> </li>
+                <li><a href="#" class="menu__link">Billetterie</a> </li>
+            </ul>
+        </nav>
     </header>
 
 
