@@ -9,37 +9,42 @@
 </head>
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
     <main>
-        
+        <img src="public/img/img/mez-0" alt="Maison Jean Prouvé" class="hero-img">
+
+        <section class="card">
+            <h1 class="card__h1">Maison Jean Prouvé</h1> <h2 class="card__h2">1954</h2>
+            <p class="card__text">Architecte de sa propre maison, Jean Prouvé déclare avoir voulu "faire une maison avec un grand volume" du fait de sa grande famille, mais aussi car il devait pouvoir accueillir des invités.Elle est, depuis 1987 classée au titre de monument historique au même titre que le bureau de Prouvé.</p>
+        </section>
+
         <div class="caroussel">
-            <figure>
-                <img src="../public/img/img/mez-1.jpg" alt="Terasse de la Maison">
+            <figure class="caroussel__img">
+                <img src="public/img/img/mez-1.jpg" alt="Terasse de la Maison">
                 <figcaption>Terasse de la Maison</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/mez-2.jpg" alt="Mise en place de l'ossature de la Maison">
+            <figure class="caroussel__img">
+                <img src="public/img/img/mez-2.jpg" alt="Mise en place de l'ossature de la Maison">
                 <figcaption>Mise en place de l'ossature de la Maison</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/mez-3.jpg" alt="Article de presse sur la Maison Jean Prouvé">
+            <figure class="caroussel__img">
+                <img src="public/img/img/mez-3.jpg" alt="Article de presse sur la Maison Jean Prouvé">
                 <figcaption>Article de presse sur la Maison Jean Prouvé</figcaption>
             </figure>
         </div>
 
         <ul class="caroussel-indic">
-            <li> <a href="#"></a> </li>
-             <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
+            <li> <a href="#" class="caroussel-indic__active"></a> </li>
+             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
         </ul>
 
         <a href="../archi.html" class="btn">Retour</a>
-
     </main>
 
 
@@ -51,16 +56,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
