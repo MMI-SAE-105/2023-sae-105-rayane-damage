@@ -10,6 +10,8 @@
     transition: all .4s ease-in-out;
 }
 
+
+
 .menu__item{
     background-color: var(--white);
     width: 100vw;
@@ -22,8 +24,6 @@
     justify-content: center;
     top: 22px;
 }
-
-
 
 
 
