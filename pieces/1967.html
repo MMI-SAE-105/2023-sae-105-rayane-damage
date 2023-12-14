@@ -9,37 +9,42 @@
 </head>
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
     <main>
+        <img src="public/img/img/nobel-0" alt="tour nobel" class="hero-img">
+
+        <section class="card">
+            <h1 class="card__h1">Tour Nobel</h1> <h2 class="card__h2">1967</h2>
+            <p class="card__text">Batiment impressionant pour l'époque de sa conception, il est notamment remarqué pour sa façade de verre et notamment les vitres courbées, inconnues en France jusqu'alors et importées d'Amérique pour la construction de la tour.</p>
+        </section>
         
         <div class="caroussel">
-            <figure>
-                <img src="../public/img/img/nobel-1.jpg" alt="Entrée de la Tour Nobel">
+            <figure class="caroussel__img">
+                <img src="public/img/img/nobel-1.jpg" alt="Entrée de la Tour Nobel">
                 <figcaption>Entrée de la Tour Nobel</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/nobel-2.jpg" alt="La Tour en construction">
+            <figure class="caroussel__img">
+                <img src="public/img/img/nobel-2.jpg" alt="La Tour en construction">
                 <figcaption>La Tour en construction</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/nobel-3.jpg" alt="Façade de la Tour">
+            <figure class="caroussel__img">
+                <img src="public/img/img/nobel-3.jpg" alt="Façade de la Tour">
                 <figcaption>Façade de la Tour</figcaption>
             </figure>
         </div>
 
         <ul class="caroussel-indic">
-            <li> <a href="#"></a> </li>
-             <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
+            <li> <a href="#" class="caroussel-indic__active"></a> </li>
+             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
         </ul>
 
         <a href="../archi.html" class="btn">Retour</a>
-
     </main>
 
 
@@ -51,16 +56,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">

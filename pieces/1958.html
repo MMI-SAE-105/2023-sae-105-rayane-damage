@@ -9,37 +9,43 @@
 </head>
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
     <main>
+        <img src="public/img/img/pav-0" alt="Pavillon de la France" class="hero-img">
+
+        <section class="card">
+            <h1 class="card__h1">Pavillon de la France</h1> <h2 class="card__h2">1958</h2>
+            <p class="card__text">Construit à l'occasion de l'exposition universelle de 1958, la première depuis la seconde guerre mondiale, le Pavillon de la France est un édifice monumental, concu par trois architectes : Guillaume Gillet, René Sarge et Jean Prouvé pour les facades.
+            </p>
+        </section>
         
         <div class="caroussel">
-            <figure>
-                <img src="../public/img/img/pav-1.jpg" alt="Ossature du Pavillon en construction">
+            <figure class="caroussel__img">
+                <img src="public/img/img/pav-1.jpg" alt="Ossature du Pavillon en construction">
                 <figcaption>Ossature du Pavillon en construction</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/pav-2.jpg" alt="Façade du Pavillon">
+            <figure class="caroussel__img">
+                <img src="public/img/img/pav-2.jpg" alt="Façade du Pavillon">
                 <figcaption>Façade du Pavillon</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/pav-3.jpg" alt="Maquette du Pavillon">
+            <figure class="caroussel__img">
+                <img src="public/img/img/pav-3.jpg" alt="Maquette du Pavillon">
                 <figcaption>Maquette du Pavillon</figcaption>
             </figure>
         </div>
 
         <ul class="caroussel-indic">
-            <li> <a href="#"></a> </li>
-             <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
+            <li> <a href="#" class="caroussel-indic__active"></a> </li>
+             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
         </ul>
 
         <a href="../archi.html" class="btn">Retour</a>
-
     </main>
 
 
@@ -51,16 +57,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">

@@ -9,37 +9,42 @@
 </head>
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
     <main>
-        
+        <img src="public/img/img/tourr-0" alt="Tour radio du Stiff" class="hero-img">
+
+        <section class="card">
+            <h1 class="card__h1">Tour radio du Stiff</h1> <h2 class="card__h2">1980</h2>
+            <p class="card__text">Cette tour d'observation a été construite a la suite d'un naufrage sur l'île d'Ouessant afin de permettre une meilleure surveillance de la zone. C'est Jean Prouvé qui est en charge de la concevoir et met en œuvre le principe du noyau central en béton pour sa structure.</p>
+        </section>
+
         <div class="caroussel">
-            <figure>
-                <img src="../public/img/img/tourr-1.jpg" alt="Maquette de la Tour radio">
+            <figure class="caroussel__img">
+                <img src="public/img/img/tourr-1.jpg" alt="Maquette de la Tour radio">
                 <figcaption>Maquette de la Tour radio</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/tourr-2.jpg" alt="Croquis de la cabine">
+            <figure class="caroussel__img">
+                <img src="public/img/img/tourr-2.jpg" alt="Croquis de la cabine">
                 <figcaption>Croquis de la cabine</figcaption>
             </figure>
-            <figure>
-                <img src="../public/img/img/tourr-3.jpg" alt="Vue de la Tour depuis le large">
+            <figure class="caroussel__img">
+                <img src="public/img/img/tourr-3.jpg" alt="Vue de la Tour depuis le large">
                 <figcaption>Vue de la Tour depuis le large</figcaption>
             </figure>
         </div>
 
         <ul class="caroussel-indic">
-            <li> <a href="#"></a> </li>
-             <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
+            <li> <a href="#" class="caroussel-indic__active"></a> </li>
+             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
         </ul>
 
         <a href="../archi.html" class="btn">Retour</a>
-
     </main>
 
 
@@ -51,16 +56,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
