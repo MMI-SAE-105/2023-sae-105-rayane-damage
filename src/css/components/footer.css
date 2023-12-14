@@ -42,6 +42,10 @@
     height: 15px;
 }
 
+.footer__start{
+    display: grid;
+    height: 266px;
+}
 
 .footer__title{
     background-color: var(--white);
