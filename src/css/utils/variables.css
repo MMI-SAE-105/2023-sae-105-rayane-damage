@@ -1,26 +1,42 @@
 root {
-    
+
 /* Color styles */
 --white: rgba(254, 249, 249, 1);
 --gray-light: rgba(238, 231, 231, 1);
 --gray: rgba(210, 202, 202, 1);
 --gray-dark: rgba(131, 126, 127, 1);
 --black: rgba(44, 42, 45, 1);
---blue: rgba(117, 181, 227, 1);
---yell: rgba(248, 203, 89, 1);
---green: rgba(114, 201, 123, 1);
 --brown: rgba(153, 118, 66, 1);
---grayscale: rgba(217, 217, 217, 1);
+
+
+/*Font family*/
+--h1: "IBM Plex Mono";
+--h2: "IBM Plex Mono";
+--h3: "Work Sans";
+--p: "Work Sans";
+--btn: "IBM Plex Sans";
+
+
+/*Letter Spacing*/
+--body: 0%;
+--h1ls: 5%;
+--h3ls: 10%;
+--h2ls: 15%;
+
+/*Line height*/
+--bodyheight: 110%;
 
 /* Text-size styles */
-/* base size: p (16px) */
---h1: 2.25rem;
---h2: 2rem;
---h3: 2rem;
---p: 1rem;
---str: 1rem;
---em: 1rem;
---btn1: 1.25rem;
---btn2: 1.25rem;
+--h1size: 2.25rem;
+--h2size: 2rem;
+--psize: 1rem;
+--btnsize: 1.25rem;
+
+/* Espaces */
+--space1x: 8px;
+--space2x: 16px;
+--space3x: 24px;
+--space4x: 48px;
+--space5x: 80px;
 
 }
