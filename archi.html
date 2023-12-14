@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
@@ -18,8 +18,9 @@
         <img src="public/img/img/jean-prouve.jpg" alt="Jean Prouvé">
 
         <section class="card">
-            <h1>À propos de</h1> <h2>Jean Prouvé</h2>
-            <p>D'abord ferronnier suivant le mouvement Art nouveau, il s'oriente ensuite vers l'Avant-gardisme en utilisant des matériaux nouveaux comme l'acier inoxydable et deviendra un des précurseurs de notre architecture moderne.</p>
+            <h1 class="card__h1">À propos de</h1> <h2 class="card__h2">Jean Prouvé</h2>
+            <p class="card__text">D'abord ferronnier suivant le mouvement Art nouveau, il s'oriente ensuite vers l'<strong>Avant-gardisme</strong> en utilisant des matériaux nouveaux comme l'acier inoxydable et deviendra <strong>un des précurseurs de notre architecture moderne</strong>.</p>
+            <a href="archi.html" class="card__btn">Voir Plus</a>
         </section>
 
         <h2 class="frise__title">Travaux</h2>
@@ -74,8 +75,6 @@
             </div>
             <a href="https://www.jeanprouve.com" class="btn">Plus de travaux</a>
         </section>
-        
-
     </main>
 
 
@@ -87,16 +86,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
