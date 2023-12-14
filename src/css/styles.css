@@ -15,7 +15,7 @@ Soyez attentifs à l'ordre d'import :
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;700&family=Work+Sans:ital,wght@0,300;0,700;1,400&display=swap');
 
 /* Vendors */
-
+@import url(vendors/normalize.css);
 
 /* Utils */
 @import url(utils/variables.css);
