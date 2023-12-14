@@ -1,12 +1,14 @@
 *,
 *:before,
 *:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    z-index: 2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    z-index: 1;
     font-family: var(--p);
     font-size: var(--psize);
     font-weight: 300;
