@@ -22,6 +22,7 @@ Soyez attentifs à l'ordre d'import :
 
 /* Base */
 @import url(base/main.css);
+@import url(base/media.css);
 
 /* Layout */
 @import url(layout/menu.css);
