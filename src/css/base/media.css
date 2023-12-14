@@ -8,9 +8,16 @@ img {
 .backdrop{
     z-index: 1;
     position: absolute;
-    top: 0;
     left: 0;
     height: 100vh;
     width: auto;
     top: 64px;
+}
+
+.backdrop__img{
+    object-fit: cover;
+}
+
+.multiply{
+    mix-blend-mode: multiply;
 }
