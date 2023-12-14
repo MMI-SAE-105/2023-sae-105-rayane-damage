@@ -6,18 +6,18 @@
     text-transform: uppercase;
     color: var(--black);
 
-    z-index: 7;
     position: relative;
     height: 56px;
     padding: var(--space2x);
     justify-self: end;
     align-self: flex-end;
-    transition: all .2s ease-out;
+
+    transform-style: preserve-3d;
 }
 
 .footer__btn::before{
     content: "";
-    z-index: 1;
+    transform: translateZ(-1px);
     position: absolute;
     display: block;
     width: 56px;
@@ -25,8 +25,9 @@
     top: -14px;
     left: 0px;
     border: 2px solid var(--gray);
+    transition: all .2s ease-out;
 }
 
-.footer__btn:active{
-    transform: scale(0.9);
+.footer__btn:active::before{
+    border: 8px solid var(--gray-light);
 }
