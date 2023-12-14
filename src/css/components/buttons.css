@@ -6,9 +6,27 @@
     text-transform: uppercase;
     color: var(--black);
 
+    z-index: 7;
     position: relative;
     height: 56px;
     padding: var(--space2x);
     justify-self: end;
     align-self: flex-end;
+    transition: all .2s ease-out;
+}
+
+.footer__btn::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 56px;
+    height: 56px;
+    top: -14px;
+    left: 0px;
+    border: 2px solid var(--gray);
+}
+
+.footer__btn:active{
+    transform: scale(0.9);
 }
