@@ -9,9 +9,9 @@
 
 
     /*Font family*/
-    --h1: "IBM Plex Mono", monospace;
-    --p: "Work Sans", sans-serif;
-    --btn: "IBM+Plex+Sans", sans-serif;
+    --h1: "IBM Plex Mono";
+    --p: "Work Sans";
+    --btn: "IBM Plex Sans";
 
 
     /*Letter Spacing*/
