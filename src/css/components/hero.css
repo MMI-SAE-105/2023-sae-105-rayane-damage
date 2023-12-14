@@ -1,7 +1,10 @@
-.hero-img{
+.img{
     position: relative;
+    height: 60vh;
+    width: 100vw;
     top: 64px;
-    
-    height: 80vh;
-    width: auto;
+}
+
+.hero-img{
+    object-fit: cover;
 }
