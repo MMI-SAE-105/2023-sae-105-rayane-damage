@@ -7,6 +7,7 @@
 body {
     font-family: var(--p);
     font-size: var(--psize);
+    font-weight: 300;
     line-height: 1;
     background-color: var(--gray-dark);
 }
@@ -18,14 +19,12 @@ h1{
     font-weight: 600;
     letter-spacing: var(--h1ls);
 }
-
 h2{
     font-family: var(--h1);
     font-size: var(--h2size);
     font-weight: 400;
     letter-spacing: var(--h2ls);
 }
-
 h3{
     font-family: var(--p);
     font-size: var(--h2size);
