@@ -22,6 +22,13 @@
     left: var(--space4x);
 }
 
+.footer__form-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 81px;
+}
+
 .form__example{
     display: flex;
     flex-direction: column;
@@ -29,5 +36,9 @@
     font-size: 12px;
     color: var(--gray-dark);
     line-height: 80%;
-    height: 47px;
+    height: 86px;
+}
+
+.form__example-item{
+    height: 15px;
 }
