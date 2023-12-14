@@ -10,16 +10,26 @@
     position: relative;
     width: 48px;
     height: 48px;
+    margin: var(--space1x);
 }
 
 .menu__btn-square {
     position: absolute;
-    padding: 8px;
-    width: 38px;
-    height: 38px;
+    display: block;
+    width: 36px;
+    height: 36px;
     top: 10px;
-    left: 0;
-    stroke: var(--gray);
-    stroke-width: 2px;
-
+    left: 0px;
+    border: 2px solid var(--gray);
+}
+.menu__btn-square::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    top: -11px;
+    left: 8px;
+    border: 2px solid var(--gray-dark);
 }
