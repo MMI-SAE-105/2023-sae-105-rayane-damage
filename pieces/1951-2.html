@@ -9,13 +9,21 @@
 </head>
 <body>
 
-    <header>
-        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
     <main>
+        <img src="public/img/img/jean-prouve.jpg" alt="Jean Prouvé" class="hero-img">
+
+        <section class="card">
+            <h1 class="card__h1">Casino de la grande Côte</h1> <h2 class="card__h2">1951</h2>
+            <p class="card__text">La signature de Jean Prouvé s'affirme de plus en plus avec le Casino de la Grande Côte. En effet, la contribution de Prouvé est l'ajout de panneaux aluminium à hublots qui est sa marque de fabrique dans les années 50 et représente la modernité architecturale.
+            </p>
+        </section>
+
         
         <div class="caroussel">
             <figure>
@@ -40,10 +48,34 @@
 
         <a href="../archi.html" class="btn">Retour</a>
 
+        <div class="caroussel">
+            <figure class="caroussel__img">
+                <img src="public/img/img/cas-1.jpg" alt="Façade du Casino">
+                <figcaption>Façade du Casino</figcaption>
+            </figure>
+            <figure class="caroussel__img">
+                <img src="public/img/img/cas-2.jpg" alt="Plaque aluminium avec hublots">
+                <figcaption>Plaque aluminium avec hublots</figcaption>
+            </figure>
+            <figure class="caroussel__img">
+                <img src="public/img/img/cas-3.jpg" alt="Article de presse sur la construction du Casino">
+                <figcaption>Article de presse sur la construction du Casino</figcaption>
+            </figure>
+        </div>
+
+        <ul class="caroussel-indic">
+            <li> <a href="#" class="caroussel-indic__active"></a> </li>
+             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+        </ul>
+
+        <a href="../archi.html" class="btn">Retour</a>
+
+
     </main>
 
 
-    <footer class="footer">
+     <footer class="footer">
         <div class="footer__form">
             <h1 class="footer__form-title">Contact</h1>
             <ul class="footer__form-list">
@@ -51,16 +83,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
