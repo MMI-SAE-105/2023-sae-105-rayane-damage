@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jean Prouvé : Rétrospective - Casino de la grande côte</title>
     <script src="//unpkg.com/alpinejs" defer></script>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body>
 
     <header class="header">
-        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
         <button class="header__btn menu__btn"></button>
         <nav :class="menuOpen ? 'menu--shown' : 'menu--hidden' ">
             <ul class="menu__list">
-                <li><a href="archi.html" class="menu__link">Jean Prouvé</a> </li>
-                <li><a href="infos.html" class="menu__link">L'Exposition</a> </li>
+                <li><a href="../archi.html" class="menu__link">Jean Prouvé</a> </li>
+                <li><a href="../infos.html" class="menu__link">L'Exposition</a> </li>
                 <li><a href="#" class="menu__link">Billetterie</a> </li>
             </ul>
         </nav>
@@ -23,7 +23,7 @@
 
 
     <main>
-        <img src="public/img/img/cas-0" alt="Vue aérienne du casino" class="hero-img">
+        <img src="../public/img/img/cas-0" alt="Vue aérienne du casino" class="hero-img">
 
         <section class="card">
             <h1 class="card__h1">Casino de la grande Côte</h1> <h2 class="card__h2">1951</h2>
@@ -31,41 +31,17 @@
             </p>
         </section>
 
-        
         <div class="caroussel">
-            <figure>
+            <figure class="caroussel__img">
                 <img src="../public/img/img/cas-1.jpg" alt="Façade du Casino">
                 <figcaption>Façade du Casino</figcaption>
             </figure>
-            <figure>
+            <figure class="caroussel__img">
                 <img src="../public/img/img/cas-2.jpg" alt="Plaque aluminium avec hublots">
                 <figcaption>Plaque aluminium avec hublots</figcaption>
             </figure>
-            <figure>
+            <figure class="caroussel__img">
                 <img src="../public/img/img/cas-3.jpg" alt="Article de presse sur la construction du Casino">
-                <figcaption>Article de presse sur la construction du Casino</figcaption>
-            </figure>
-        </div>
-
-        <ul class="caroussel-indic">
-            <li> <a href="#"></a> </li>
-             <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
-        </ul>
-
-        <a href="../archi.html" class="btn">Retour</a>
-
-        <div class="caroussel">
-            <figure class="caroussel__img">
-                <img src="public/img/img/cas-1.jpg" alt="Façade du Casino">
-                <figcaption>Façade du Casino</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="public/img/img/cas-2.jpg" alt="Plaque aluminium avec hublots">
-                <figcaption>Plaque aluminium avec hublots</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="public/img/img/cas-3.jpg" alt="Article de presse sur la construction du Casino">
                 <figcaption>Article de presse sur la construction du Casino</figcaption>
             </figure>
         </div>
@@ -77,8 +53,6 @@
         </ul>
 
         <a href="../archi.html" class="btn">Retour</a>
-
-
     </main>
 
 
@@ -98,7 +72,7 @@
         </div>
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
+            <a href="../index.html" class="footer__logo"><img src="../public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
