@@ -10,7 +10,9 @@
 <body>
     <header class="header">
         <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
-        <button class="header__btn menu__btn" @click="menuOpen =! menuOpen"></button>
+        <button class="header__btn menu__btn" @click="menuOpen =! menuOpen">
+            <span class="menu__btn-square"></span>
+        </button>
         <nav :class="menuOpen ? 'menu--shown' : 'menu--hidden' ">
             <ul class="menu__list">
                 <li><a href="archi.html" class="menu__link">Jean Prouvé</a> </li>

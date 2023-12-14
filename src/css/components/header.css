@@ -1,9 +1,17 @@
 .header {
     position: fixed;
+    z-index: 3;
     top: 0;
     left: 0;
     width: 100vw;
     height: 64px;
     display: flex;
+    justify-content: space-between;
     background-color: var(--white);
+    align-items: center;
+}
+
+.header__logo{
+    display: flex;
+    padding: 8px;
 }
