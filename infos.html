@@ -8,32 +8,31 @@
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-
-    <header>
-        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <button class="header__btn menu__btn"></button>
     </header>
 
 
     <main>
-        <img src="public/img/img/fondation-parc.jpg" alt="fondation cartier parc">
+        <img src="public/img/img/fondation-parc.jpg" alt="fondation cartier parc" class="hero-img">
 
         <section class="card">
-            <h1>Informations</h1> <h2>Pratiques</h2>
-            <p>Vous cherchez une information particulière sur l'exposition ? Vous devriez la trouver ici.</p>
+            <h1 class="card__h1">Informations</h1> <h2 class="card__h2">Pratiques</h2>
+            <p class="card__text">Vous cherchez une information particulière sur l'exposition ? Vous devriez la trouver ici.</p>
         </section>
 
         <section class="card">
-            <h1>Horaires</h1> <h2>d'ouverture</h2>
-            <p>L'exposition sera accessible <strong>tous les jours</strong> de <strong>11h</strong> à <strong>20h</strong> sauf le <strong>lundi</strong>. 
+            <h1 class="card__h1">Horaires</h1> <h2 class="card__h2">d'ouverture</h2>
+            <p class="card__text">L'exposition sera accessible <strong>tous les jours</strong> de <strong>11h</strong> à <strong>20h</strong> sauf le <strong>lundi</strong>. 
                 Nocturne le <strong>mardi</strong>, jusqu'à <strong>22h</strong>. 
 
                 La <strong>fermeture</strong> des salles débute <strong>15min avant</strong> l'heure indiquée</p>
         </section>
-        <p>Du <strong>13 avril</strong> Au <strong>23 juin 2024</strong></p>
+        <p class="standalone-text">Du <strong>13 avril</strong> Au <strong>23 juin 2024</strong></p>
 
         <section class="acces">
-            <h2 class="acces__titre">Accès</h2>
+            <h2 class="acces__title">Accès</h2>
             <img src="public/img/img/map.jpg" alt="plan du site" class="acces__map">
             <div class="acces__adress adress">
                 <h3 class="adress__title">Adresse complète :</h3>
@@ -44,23 +43,22 @@
         <section class="tarifs">
             <h2 class="tarifs__title">Tarifs</h2>
             <ul class="tarifs__list">
-                <li>Plein Tarif</li>
-                <li>Tarif Réduit</li>
-                <li>Réduction 13-25 ans</li>
-                <li>Fondation Cartier Pass</li>
-                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
+                <li class="tarifs__item">Plein Tarif</li>
+                <li class="tarifs__item">Tarif Réduit</li>
+                <li class="tarifs__item">Réduction 13-25 ans</li>
+                <li class="tarifs__item">Fondation Cartier Pass</li>
+                <li class="tarifs__item">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
             </ul>
 
             <ul class="tarifs__prices">
-                <li>11 €</li>
-                <li>7,50 €</li>
-                <li>5 €</li>
-                <li>18 - 50 €</li>
-                <li>Gratuit</li>
+                <li class="tarifs__price">11 €</li>
+                <li class="tarifs__price">7,50 €</li>
+                <li class="tarifs__price">5 €</li>
+                <li class="tarifs__price">18 - 50 €</li>
+                <li class="tarifs__price">Gratuit</li>
             </ul>
             <a href="#" class="tarifs__btn">billetterie</a>
         </section>
-
     </main>
 
 
@@ -72,16 +70,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
-
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
