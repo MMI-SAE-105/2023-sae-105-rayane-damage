@@ -1,4 +1,7 @@
 img {
     height: auto;
     max-width: 100%;
-  }
+
+    filter: grayscale(1);
+}
+
