@@ -10,10 +10,10 @@
 <body>
     <header class="header">
         <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
-        <button class="header__btn menu__btn" @click="menuOpen =! menuOpen">
-            <span class="menu__btn-square"></span>
+        <button class="header__btn menu__btn" @click="menuOpen =! menuOpen" >
+            <span :class="menuOpen ? 'menu__btn-square--open' : 'menu__btn-square' "></span>
         </button>
-        <nav class="menu" :class="menuOpen ? 'menu--shown' : 'menu--hidden' ">
+        <nav class="menu" :class="menuOpen ? 'menu' : 'menu--hidden' ">
             <ul class="menu__list">
                 <li class="menu__item"><a href="archi.html" class="menu__link">Jean Prouvé</a> </li>
                 <li class="menu__item"><a href="infos.html" class="menu__link">L'Exposition</a> </li>
