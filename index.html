@@ -8,65 +8,65 @@
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo"></a>
-        <span></span>
+    <header class="header">
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <span class="header__btn menu__btn"></span>
     </header>
 
 
     <main>
-        <img src="public/img/img/fondation.jpg" alt="fondation cartier">
+        <img src="public/img/img/fondation.jpg" alt="fondation cartier" class="hero-img">
 
         <section class="card">
-            <h1>Jean Prouvé :</h1> <h2>Rétrospective</h2>
-            <p>est une exposition organisée en l'honneur du célèbre architecte français <em>Jean Prouvé</em> notamment connu pour son travail sur le Vélodrome de Bercy ou encore pour son mobilier et ses habitations démontables.</p>
+            <h1 class="card__h1">Jean Prouvé :</h1> <h2 class="card__h2">Rétrospective</h2>
+            <p class="card__text">est une exposition organisée en l'honneur du célèbre architecte français <em>Jean Prouvé</em> notamment connu pour son travail sur le Vélodrome de Bercy ou encore pour son mobilier et ses habitations démontables.</p>
             <a href="archi.html" class="card__btn">Voir Plus</a>
         </section>
 
         <div class="caroussel">
-            <figure>
+            <figure class="caroussel__img">
                 <img src="public/img/img/car-1.jpg" alt="Poste à essence Socony-Vaccum">
                 <figcaption>Poste à essence Socony-Vaccum</figcaption>
             </figure>
-            <figure>
+            <figure class="caroussel__img">
                 <img src="public/img/img/car-2.jpg" alt="Maison du peuple, Clichy">
                 <figcaption>Maison du peuple, Clichy</figcaption>
             </figure>
-            <figure>
+            <figure class="caroussel__img">
                 <img src="public/img/img/car-3.jpg" alt="école de croismare">
                 <figcaption>École de Croismare</figcaption>
             </figure>
         </div>
 
         <ul class="caroussel-indic">
-            <li> <a href="#"></a> </li>
-             <li> <a href="#"></a> </li>
-            <li> <a href="#"></a> </li>
+            <li> <a href="#" class="caroussel-indic__active"></a> </li>
+             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
+            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
         </ul>
 
-        <section class="card">
-            <h2>L'Exposition</h2>
-            <p>Prendra place <strong>Fondation Cartier, 261 Bd Raspail, 75014 Paris</strong></p>
-            <p>Du <strong>13 avril</strong> Au <strong>23 juin 2024</strong></p>
-            <a href="infos.html" class="card__btn">Voir Plus</a>
+        <section class="card card--black">
+            <h1 class="card__h1">L'Exposition</h1>
+            <p class="card__text">Prendra place <strong>Fondation Cartier, 261 Bd Raspail, 75014 Paris</strong>
+            Du <strong>13 avril</strong> Au <strong>23 juin 2024</strong></p>
+            <a href="archi.html" class="card__btn">Voir Plus</a>
         </section>
 
         <section class="tarifs">
             <h2 class="tarifs__title">Tarifs</h2>
             <ul class="tarifs__list">
-                <li>Plein Tarif</li>
-                <li>Tarif Réduit</li>
-                <li>Réduction 13-25 ans</li>
-                <li>Fondation Cartier Pass</li>
-                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
+                <li class="tarifs__item">Plein Tarif</li>
+                <li class="tarifs__item">Tarif Réduit</li>
+                <li class="tarifs__item">Réduction 13-25 ans</li>
+                <li class="tarifs__item">Fondation Cartier Pass</li>
+                <li class="tarifs__item">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
             </ul>
 
             <ul class="tarifs__prices">
-                <li>11 €</li>
-                <li>7,50 €</li>
-                <li>5 €</li>
-                <li>18 - 50 €</li>
-                <li>Gratuit</li>
+                <li class="tarifs__price">11 €</li>
+                <li class="tarifs__price">7,50 €</li>
+                <li class="tarifs__price">5 €</li>
+                <li class="tarifs__price">18 - 50 €</li>
+                <li class="tarifs__price">Gratuit</li>
             </ul>
             <a href="#" class="tarifs__btn">billetterie</a>
         </section>
@@ -81,15 +81,15 @@
                 <li>E-Mail :</li>
                 <li>Message :</li>
             </ul>
-            <ul class="footer__form-example">
+            <ul class="form__example">
                 <li>Jean Pierre</li>
                 <li>exemple@domaine.com</li>
             </ul>
-            <a href="#" class="footer__btn"></a>
+            <a href="#" class="footer__btn">envoyer</a>
         </div>
         <div class="footer__title">
             <h2>Jean Prouvé :</h2> <h2>Rétrospective</h2>
-            <img src="public/img/icons/icon64.svg" alt="logo">
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
         
         <ul class="footer__links">
