@@ -1,0 +1,17 @@
+.footer{
+    background-color: var(--gray-light);
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__form-title{
+    font-family: var(--p);
+    font-size: var(--h2size);
+    letter-spacing: var(--h3ls);
+    font-weight: 300;
+    padding: 16px;
+    margin: 0;
+    background-color: var(--white);
+}
+
