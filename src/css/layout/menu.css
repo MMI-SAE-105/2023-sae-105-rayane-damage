@@ -1,0 +1,25 @@
+.menu {
+    position: fixed;
+}
+
+.menu--hidden {
+    visibility: hidden;
+}
+
+.menu__btn {
+    position: relative;
+    width: 48px;
+    height: 48px;
+}
+
+.menu__btn-square {
+    position: absolute;
+    padding: 8px;
+    width: 38px;
+    height: 38px;
+    top: 10px;
+    left: 0;
+    stroke: var(--gray);
+    stroke-width: 2px;
+
+}

@@ -24,7 +24,7 @@ Soyez attentifs à l'ordre d'import :
 @import url(base/main.css);
 
 /* Layout */
-
+@import url(layout/menu.css);
 
 /* Components */
 @import url(components/header.css);
