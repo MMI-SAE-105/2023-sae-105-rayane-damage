@@ -1,0 +1,26 @@
+root {
+    
+/* Color styles */
+--white: rgba(254, 249, 249, 1);
+--gray-light: rgba(238, 231, 231, 1);
+--gray: rgba(210, 202, 202, 1);
+--gray-dark: rgba(131, 126, 127, 1);
+--black: rgba(44, 42, 45, 1);
+--blue: rgba(117, 181, 227, 1);
+--yell: rgba(248, 203, 89, 1);
+--green: rgba(114, 201, 123, 1);
+--brown: rgba(153, 118, 66, 1);
+--grayscale: rgba(217, 217, 217, 1);
+
+/* Text-size styles */
+/* base size: p (16px) */
+--h1: 2.25rem;
+--h2: 2rem;
+--h3: 2rem;
+--p: 1rem;
+--str: 1rem;
+--em: 1rem;
+--btn1: 1.25rem;
+--btn2: 1.25rem;
+
+}
