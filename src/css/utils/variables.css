@@ -15,10 +15,10 @@
 
 
     /*Letter Spacing*/
-    --body: 0%;
-    --h1ls: 5%;
-    --h3ls: 10%;
-    --h2ls: 15%;
+    --body: 0rem;
+    --h1ls: 0.113rem;
+    --h3ls: 0.2rem;
+    --h2ls: 0.3rem;
 
     /*Line height*/
     --bodyheight: 110%;
