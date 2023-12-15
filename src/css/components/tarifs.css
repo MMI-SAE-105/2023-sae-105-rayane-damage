@@ -1,0 +1,27 @@
+.tarifs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin: var(--space4x) auto var(--space3x);
+    color: var(--white);
+}
+
+.tarifs__title{
+    text-align: center;
+}
+.tarifs__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tarifs__names,
+.tarifs__prices{
+    position: relative;
+    width: 177px;
+}
+
+.tarifs__item{
+    height: 16px;
+    margin-bottom: 16px;
+}
