@@ -5,11 +5,17 @@
     padding: var(--space1x);
     padding-right: 0;
     height: 208px;
-
-    background-color: var(--brown);
 }
-
-.card--black{
+.card::before,
+.card--black::before{
+    content: "";
+    background-color: var(--brown);
+    position: absolute;
+    top: 30px;
+    height: 208px;
+    width: 100%;
+}
+.card--black::before{
     background-color: var(--black);
 }
 
