@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuOpen : false}">
+<html lang="fr" x-data="{menuOpen : false, unfolded: false}" :class="menuOpen ? 'noscroll' : '' ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,14 @@
             <ul class="menu__list">
                 <li class="menu__item"><a href="archi.html" class="menu__link">Jean Prouvé</a> </li>
                 <li class="menu__item"><a href="infos.html" class="menu__link">L'Exposition</a> </li>
-                <li class="menu__item"><a href="#" class="menu__link">Billetterie</a> </li>
+                <li class="menu__item menu__item--em"><a href="#" class="menu__link">Billetterie</a> </li>
             </ul>
         </nav>
     </header>
 
 
     <main>
-        <img src="public/img/img/fondation-parc.jpg" alt="fondation cartier parc" class="hero-img">
+        <img src="public/img/img/fondation-parc.jpg" alt="fondation cartier parc" class="hero-img img">
 
         <section class="card">
             <h1 class="card__h1">Informations</h1> <h2 class="card__h2">Pratiques</h2>
@@ -51,21 +51,23 @@
 
         <section class="tarifs">
             <h2 class="tarifs__title">Tarifs</h2>
-            <ul class="tarifs__list">
-                <li class="tarifs__item">Plein Tarif</li>
-                <li class="tarifs__item">Tarif Réduit</li>
-                <li class="tarifs__item">Réduction 13-25 ans</li>
-                <li class="tarifs__item">Fondation Cartier Pass</li>
-                <li class="tarifs__item">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
-            </ul>
+            <div class="tarifs__list">
+                <ul class="tarifs__names">
+                    <li class="tarifs__item">Plein Tarif</li>
+                    <li class="tarifs__item">Tarif Réduit</li>
+                    <li class="tarifs__item">Réduction 13-25 ans</li>
+                    <li class="tarifs__item">Fondation Cartier Pass</li>
+                    <li class="tarifs__item" :class="unfolded ? 'tarifs__item--unfolded' : '' " @click="unfolded=!unfolded">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
+                </ul>
 
-            <ul class="tarifs__prices">
-                <li class="tarifs__price">11 €</li>
-                <li class="tarifs__price">7,50 €</li>
-                <li class="tarifs__price">5 €</li>
-                <li class="tarifs__price">18 - 50 €</li>
-                <li class="tarifs__price">Gratuit</li>
-            </ul>
+                <ul class="tarifs__prices">
+                    <li class="tarifs__item">11 €</li>
+                    <li class="tarifs__item">7,50 €</li>
+                    <li class="tarifs__item">5 €</li>
+                    <li class="tarifs__item">18 - 50 €</li>
+                    <li class="tarifs__item">Gratuit</li>
+                </ul>
+            </div>
             <a href="#" class="tarifs__btn">billetterie</a>
         </section>
     </main>
