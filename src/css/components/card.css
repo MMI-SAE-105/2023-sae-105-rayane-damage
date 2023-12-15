@@ -20,6 +20,7 @@
 }
 
 .card__title{
+    width: 87vw;
     display: flex;
 }
 .card__h1{
