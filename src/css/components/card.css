@@ -1,8 +1,12 @@
 .card{
     display: grid;
+    margin: 6.4%;
+
+    background-color: var(--brown);
 }
 
 .card__h1{
+    margin: 0;
     font-family: var(--h1);
     font-size: var(--h1size);
     font-weight: 600;
@@ -18,6 +22,8 @@
 }
 
 .card__text{
+    padding: var(--space1x);
+
     font-family: var(--p);
     font-size: var(--psize);
     font-weight: 300;
