@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__h1{
+    font-family: var(--h1);
+    font-size: var(--h1size);
+    font-weight: 600;
+    color: var(--white);
+    letter-spacing: var(--h1ls);
+}
+.card__h2{
+    font-family: var(--p);
+    font-size: var(--h2size);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: var(--h3ls);
+}
+
+.card__text{
+    font-family: var(--p);
+    font-size: var(--psize);
+    font-weight: 300;
+    color: var(--white);
+    letter-spacing: var(--body);
+    line-height: var(--bodyheight);
+}
