@@ -42,3 +42,9 @@
     width: 20px;
     transition: all .2s ease-in-out;
 }
+
+
+.carrousel__btn{
+    width: 32px;
+    height: 32px;
+}
