@@ -24,7 +24,7 @@
 
 
     <main>
-        <img src="../public/img/img/cas-0.jpg" alt="Vue aérienne du casino" class="hero-img">
+        <img src="../public/img/img/cas-0.jpg" alt="Vue aérienne du casino" class="hero-img img">
 
         <section class="card">
             <h1 class="card__h1">Casino de la grande Côte</h1> <h2 class="card__h2">1951</h2>
@@ -32,26 +32,43 @@
             </p>
         </section>
 
-        <div class="caroussel">
-            <figure class="caroussel__img">
-                <img src="../public/img/img/cas-1.jpg" alt="Façade du Casino">
-                <figcaption>Façade du Casino</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/cas-2.jpg" alt="Plaque aluminium avec hublots">
-                <figcaption>Plaque aluminium avec hublots</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/cas-3.jpg" alt="Article de presse sur la construction du Casino">
-                <figcaption>Article de presse sur la construction du Casino</figcaption>
-            </figure>
-        </div>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+            <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/cas-1.jpg" alt="Façade du Casino">
+                        <figcaption class="carrousel__img--caption">Façade du Casino</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/cas-2.jpg" alt="Plaque aluminium avec hublots">
+                        <figcaption>Plaque aluminium avec hublots</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/cas-3.jpg" alt="Plaque Article de presse sur la construction du Casino">
+                        <figcaption class="carrousel__img--caption">Plaque Article de presse sur la construction du Casino</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <ul class="caroussel-indic">
-            <li> <a href="#" class="caroussel-indic__active"></a> </li>
-             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-        </ul>
+            <ul class="caroussel__links">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
+                    &lt;
+                </button>
+
+                <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
+
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
+                    >
+                </button>
+            </ul>
+
+        </carrousel>
 
         <a href="../archi.html" class="btn">Retour</a>
     </main>

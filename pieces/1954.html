@@ -23,33 +23,48 @@
     </header>
 
     <main>
-        <img src="../public/img/img/mez-0.jpg" alt="Maison Jean Prouvé" class="hero-img">
+        <img src="../public/img/img/mez-0.jpg" alt="Maison Jean Prouvé" class="hero-img img">
 
         <section class="card">
             <h1 class="card__h1">Maison Jean Prouvé</h1> <h2 class="card__h2">1954</h2>
             <p class="card__text">Architecte de sa propre maison, Jean Prouvé déclare avoir voulu "faire une maison avec un grand volume" du fait de sa grande famille, mais aussi car il devait pouvoir accueillir des invités.Elle est, depuis 1987 classée au titre de monument historique au même titre que le bureau de Prouvé.</p>
         </section>
 
-        <div class="caroussel">
-            <figure class="caroussel__img">
-                <img src="../public/img/img/mez-1.jpg" alt="Terasse de la Maison">
-                <figcaption>Terasse de la Maison</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/mez-2.jpg" alt="Mise en place de l'ossature de la Maison">
-                <figcaption>Mise en place de l'ossature de la Maison</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/mez-3.jpg" alt="Article de presse sur la Maison Jean Prouvé">
-                <figcaption>Article de presse sur la Maison Jean Prouvé</figcaption>
-            </figure>
-        </div>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+            <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/mez-1.jpg" alt="Terasse de la Maison">
+                        <figcaption class="carrousel__img--caption">Terasse de la Maison</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/mez-2.jpg" alt="Mise en place de l'ossature de la Maison">
+                        <figcaption>Mise en place de l'ossature de la Maison</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/mez-3.jpg" alt="Article de presse sur la Maison Jean Prouvé">
+                        <figcaption class="carrousel__img--caption">Article de presse sur la Maison Jean Prouvé</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <ul class="caroussel-indic">
-            <li> <a href="#" class="caroussel-indic__active"></a> </li>
-             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-        </ul>
+            <ul class="caroussel__links">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
+                    &lt;
+                </button>
+
+                <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
+
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
+                    >
+                </button>
+            </ul>
 
         <a href="../archi.html" class="btn">Retour</a>
     </main>

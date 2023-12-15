@@ -23,33 +23,50 @@
     </header>
 
     <main>
-        <img src="../public/img/img/tourr-0.jpg" alt="Tour radio du Stiff" class="hero-img">
+        <img src="../public/img/img/tourr-0.jpg" alt="Tour radio du Stiff" class="hero-img img">
 
         <section class="card">
             <h1 class="card__h1">Tour radio du Stiff</h1> <h2 class="card__h2">1980</h2>
             <p class="card__text">Cette tour d'observation a été construite a la suite d'un naufrage sur l'île d'Ouessant afin de permettre une meilleure surveillance de la zone. C'est Jean Prouvé qui est en charge de la concevoir et met en œuvre le principe du noyau central en béton pour sa structure.</p>
         </section>
 
-        <div class="caroussel">
-            <figure class="caroussel__img">
-                <img src="../public/img/img/tourr-1.jpg" alt="Maquette de la Tour radio">
-                <figcaption>Maquette de la Tour radio</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/tourr-2.jpg" alt="Croquis de la cabine">
-                <figcaption>Croquis de la cabine</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/tourr-3.jpg" alt="Vue de la Tour depuis le large">
-                <figcaption>Vue de la Tour depuis le large</figcaption>
-            </figure>
-        </div>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+            <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/tourr-1.jpg" alt="Vue aérienne du batiment">
+                        <figcaption class="carrousel__img--caption">Vue aérienne du batiment</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/tourr-2.jpg" alt="Intérieur de la salle">
+                        <figcaption>Intérieur de la salle</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/tourr-3.jpg" alt="Plans de la porte à hublots">
+                        <figcaption class="carrousel__img--caption">Plans de la porte à hublots</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <ul class="caroussel-indic">
-            <li> <a href="#" class="caroussel-indic__active"></a> </li>
-             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-        </ul>
+            <ul class="caroussel__links">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
+                    &lt;
+                </button>
+
+                <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
+
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
+                    >
+                </button>
+            </ul>
+
+        </carrousel>
 
         <a href="../archi.html" class="btn">Retour</a>
     </main>

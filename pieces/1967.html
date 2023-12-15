@@ -24,33 +24,45 @@
 
 
     <main>
-        <img src="../public/img/img/nobel-0.jpg" alt="tour nobel" class="hero-img">
+        <img src="../public/img/img/nobel-0.jpg" alt="tour nobel" class="hero-img img">
 
-        <section class="card">
-            <h1 class="card__h1">Tour Nobel</h1> <h2 class="card__h2">1967</h2>
-            <p class="card__text">Batiment impressionant pour l'époque de sa conception, il est notamment remarqué pour sa façade de verre et notamment les vitres courbées, inconnues en France jusqu'alors et importées d'Amérique pour la construction de la tour.</p>
-        </section>
-        
-        <div class="caroussel">
-            <figure class="caroussel__img">
-                <img src="../public/img/img/nobel-1.jpg" alt="Entrée de la Tour Nobel">
-                <figcaption>Entrée de la Tour Nobel</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/nobel-2.jpg" alt="La Tour en construction">
-                <figcaption>La Tour en construction</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/nobel-3.jpg" alt="Façade de la Tour">
-                <figcaption>Façade de la Tour</figcaption>
-            </figure>
-        </div>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+            <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/nobel-1.jpg" alt="Maquette de la tour radio">
+                        <figcaption class="carrousel__img--caption">Maquette de la tour radio</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/nobel-2.jpg" alt="Croquis de la cabine">
+                        <figcaption>Croquis de la cabine</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__img">
+                    <figure>
+                        <img src="../public/img/img/nobel-3.jpg" alt="Vue de la tour depuis le large">
+                        <figcaption class="carrousel__img--caption">Vue de la tour depuis le large</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <ul class="caroussel-indic">
-            <li> <a href="#" class="caroussel-indic__active"></a> </li>
-             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-        </ul>
+            <ul class="caroussel__links">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
+                    &lt;
+                </button>
+
+                <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
+
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
+                    >
+                </button>
+            </ul>
+
+        </carrousel>
 
         <a href="../archi.html" class="btn">Retour</a>
     </main>
