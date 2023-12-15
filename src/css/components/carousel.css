@@ -1,6 +1,9 @@
 .caroussel {
     display: flex;
     width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
 }
 .carrousel__img{
     width: 100%;
