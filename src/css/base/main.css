@@ -65,3 +65,17 @@ strong{
 .noscroll body{
     overflow: hidden;
 }
+
+.standalone-text{
+    position: relative;
+    padding: var(--space1x);
+    text-align: center;
+    font-family: var(--btn);
+    font-size: var(--btnsize);
+    font-weight: 300;
+    letter-spacing: var(--h3ls);
+    color: var(--white);
+}
+.standalone-text>strong{
+    font-weight: 700;
+}
