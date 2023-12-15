@@ -8,6 +8,7 @@
 
     justify-self: end;
     align-self: flex-end;
+    padding-right: var(--space1x);
 }
 
 

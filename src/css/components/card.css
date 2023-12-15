@@ -12,7 +12,7 @@
     background-color: var(--brown);
     position: absolute;
     top: 30px;
-    height: 208px;
+    height: 100%;
     width: 100%;
 }
 .card--black::before{
