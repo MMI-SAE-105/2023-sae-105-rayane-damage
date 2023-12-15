@@ -27,10 +27,14 @@
         <img src="../public/img/img/cas-0.jpg" alt="Vue aérienne du casino" class="hero-img img">
 
         <section class="card">
+            <div class="card__title">
+                <h1 class="card__h1">Casino de la grande Côte</h1> <h2 class="card__h2">1951</h2>
+            </div>
             <h1 class="card__h1">Casino de la grande Côte</h1> <h2 class="card__h2">1951</h2>
             <p class="card__text">La signature de Jean Prouvé s'affirme de plus en plus avec le Casino de la Grande Côte. En effet, la contribution de Prouvé est l'ajout de panneaux aluminium à hublots qui est sa marque de fabrique dans les années 50 et représente la modernité architecturale.
             </p>
         </section>
+        
 
         <carrousel x-data="{hrefCourant: '#ecran-1',}">
             <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">

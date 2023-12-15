@@ -19,7 +19,9 @@
     background-color: var(--black);
 }
 
-
+.card__title{
+    display: flex;
+}
 .card__h1{
     margin: 0;
     margin-left: var(--space1x);
