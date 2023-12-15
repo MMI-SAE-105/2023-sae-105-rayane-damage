@@ -81,3 +81,10 @@ strong{
 .standalone-text>strong{
     font-weight: 700;
 }
+
+.page404{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
