@@ -45,6 +45,19 @@
 
 
 .carrousel__btn{
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
+
+    font-size: var(--btnsize);
+    font-family: var(--h1);
+
+    color: var(--gray);
+}
+.carrousel__btn:active{
+    color: var(--white);
+    transform: scale(1.4) translateX(-8%);
+}
+
+.carrousel__btn--suiv:active{
+    transform: translateX(8%);
 }
