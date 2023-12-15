@@ -32,6 +32,7 @@
 .footer__btn::before{
     content: "";
     transform: translateZ(-1px);
+    
     position: absolute;
     display: block;
     width: 56px;
