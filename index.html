@@ -37,26 +37,25 @@
             <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                 <div id="ecran-1" class="carrousel__img">
                     <figure>
-                        <img src="public/img/img/car-1.jpg" alt="image ecran 1">
+                        <img src="public/img/img/car-1.jpg" alt="Poste à essence Socony-Vaccum">
                         <figcaption class="carrousel__img--caption">Poste à essence Socony-Vaccum</figcaption>
                     </figure>
                 </div>
                 <div id="ecran-2" class="carrousel__img">
                     <figure>
-                        <img src="public/img/img/car-2.jpg" alt="image ecran 2">
+                        <img src="public/img/img/car-2.jpg" alt="Maison du peuple, Clichy">
                         <figcaption>Maison du peuple, Clichy</figcaption>
                     </figure>
                 </div>
                 <div id="ecran-3" class="carrousel__img">
                     <figure>
-                        <img src="public/img/img/car-3.jpg" alt="image ecran 3">
+                        <img src="public/img/img/car-3.jpg" alt="École de Croismare">
                         <figcaption class="carrousel__img--caption">École de Croismare</figcaption>
                     </figure>
                 </div>
             </div>
 
             <ul class="caroussel__links">
-
                 <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
                     &lt;
                 </button>
