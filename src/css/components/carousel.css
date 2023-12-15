@@ -18,12 +18,21 @@
 .caroussel__links{
     display: flex;
     justify-content: center;
-    gap: 24px;
+    margin-top: var(--space2x);
+    gap: 10%;
     height: 32px;
 }
-.caroussel__indic{
+
+.caroussel__item{
     display: block;
-    background-color: var(--white);
-    height: 32px;
-    width: 32px;
+    border: solid 2px var(--gray-light);
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+.actif{
+    border: solid 3px var(--white);
+    border-radius: 0%;
+    height: 18px;
+    width: 18px;
 }

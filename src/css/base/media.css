@@ -6,6 +6,7 @@ img {
     filter: grayscale(1);
 }
 figcaption{
+    justify-self: flex-end;
     background-color: var(--white);
     color: var(--gray-dark);
 }
