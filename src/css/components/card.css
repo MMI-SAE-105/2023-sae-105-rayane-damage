@@ -41,6 +41,7 @@
 }
 
 .card__text{
+    width: 87vw;
     padding: var(--space1x);
 
     font-family: var(--p);
