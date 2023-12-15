@@ -9,48 +9,65 @@
 </head>
 <body>
     <header class="header">
-        <a href="../index.html"><img src="../public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
+        <a href="index.html"><img src="public\img\icons\icon48.svg" alt="logo" class="header__logo"></a>
         <button class="header__btn menu__btn" @click="menuOpen =! menuOpen" >
             <span :class="menuOpen ? 'menu__btn-square--open' : 'menu__btn-square' "></span>
         </button>
         <nav class="menu" :class="menuOpen ? 'menu' : 'menu--hidden' ">
             <ul class="menu__list">
-                <li class="menu__item"><a href="../archi.html" class="menu__link">Jean Prouvé</a> </li>
-                <li class="menu__item"><a href="../infos.html" class="menu__link">L'Exposition</a> </li>
-                <li class="menu__item"><a href="#" class="menu__link">Billetterie</a> </li>
+                <li class="menu__item"><a href="archi.html" class="menu__link">Jean Prouvé</a> </li>
+                <li class="menu__item"><a href="infos.html" class="menu__link">L'Exposition</a> </li>
+                <li class="menu__item menu__item--em"><a href="#" class="menu__link">Billetterie</a> </li>
             </ul>
         </nav>
     </header>
 
 
     <main>
-        <img src="../public/img/img/chaise-0.jpg" alt="Chaise tout bois" class="hero-img">
+        <img src="../public/img/img/chaise-0.jpg" alt="Chaise tout bois" class="hero-img img">
 
         <section class="card">
             <h1 class="card__h1">Chaise tout bois</h1> <h2 class="card__h2">1941</h2>
             <p class="card__text">Ce modèle de chaise constitué <strong>exclusivement de bois</strong> a été mis au point au début de la <strong>seconde guerre mondiale</strong> afin de faire face à la <strong>pénurie de métal</strong> tout en continuant la production. Elle sera ensuite remplacée progressivement par les chaises bois-métal.</p>
         </section>
 
-        <div class="caroussel">
-            <figure class="caroussel__img">
-                <img src="../public/img/img/chaise-1.jpg" alt="Salle de classe équipée de chaises tout bois">
-                <figcaption>Salle de classe équipée de chaises tout bois</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/chaise-2.jpg" alt="Croquis de la chaise tout bois">
-                <figcaption>Croquis de la chaise tout bois</figcaption>
-            </figure>
-            <figure class="caroussel__img">
-                <img src="../public/img/img/chaise-3.jpg" alt="Salle de classe équipée de chaises tout bois">
-                <figcaption>Salle de classe équipée de chaises tout bois</figcaption>
-            </figure>
-        </div>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+            <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__img">
+                    <figure>
+                        <img src="public/img/img/chaise-1.jpg" alt="Salle de classe équipée de chaises tout bois">
+                        <figcaption class="carrousel__img--caption">Salle de classe équipée de chaises tout bois</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__img">
+                    <figure>
+                        <img src="public/img/img/chaise-2.jpg" alt="Croquis de la chaise tout bois">
+                        <figcaption>Croquis de la chaise tout bois</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__img">
+                    <figure>
+                        <img src="public/img/img/chaise-3.jpg" alt="Salle de classe équipée de chaises tout bois">
+                        <figcaption class="carrousel__img--caption">Salle de classe équipée de chaises tout bois</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <ul class="caroussel-indic">
-            <li> <a href="#" class="caroussel-indic__active"></a> </li>
-             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-        </ul>
+            <ul class="caroussel__links">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--prec" aria-label="slide prec">
+                    &lt;
+                </button>
+
+                <li><a href="#ecran-1" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-1'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-2" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-2'}"><span class="caroussel__indic"></span></a></li>
+                <li><a href="#ecran-3" class="caroussel__item" :class="{actif:hrefCourant==='#ecran-3'}"><span class="caroussel__indic"></span></a></li>
+
+                <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel__btn carrousel__btn--suiv" aria-label="slide suiv">
+                    >
+                </button>
+            </ul>
+
+        </carrousel>
 
         <a href="../archi.html" class="btn">Retour</a>
     </main>
@@ -77,7 +94,7 @@
             <div class="footer__title-start">
                 <h2 class="footer__title--1">Jean Prouvé :</h2> <h2 class="footer__title--2" >Rétrospective</h2>
             </div>
-            <a href="../index.html" class="footer__logo"><img src="../public/img/icons/icon64.svg" alt="logo"></a>
+            <a href="index.html" class="footer__logo"><img src="public/img/icons/icon64.svg" alt="logo"></a>
         </div>
             <ul class="footer__links">
                 <li><a href="#">Mentions Légales</a> </li>
