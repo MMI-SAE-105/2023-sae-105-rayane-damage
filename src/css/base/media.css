@@ -5,6 +5,10 @@ img {
 
     filter: grayscale(1);
 }
+figcaption{
+    background-color: var(--white);
+    color: var(--gray-dark);
+}
 
 .backdrop{
     z-index: 1;
