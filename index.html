@@ -33,26 +33,35 @@
             <a href="archi.html" class="card__btn">Voir Plus</a>
         </section>
 
-        <div class="caroussel">
-            <figure  id="ecran-1" class="caroussel__img">
-                <img src="public/img/img/car-1.jpg" alt="Poste à essence Socony-Vaccum">
-                <figcaption>Poste à essence Socony-Vaccum</figcaption>
-            </figure>
-            <figure id="ecran-2"  class="caroussel__img">
-                <img src="public/img/img/car-2.jpg" alt="Maison du peuple, Clichy">
-                <figcaption>Maison du peuple, Clichy</figcaption>
-            </figure>
-            <figure id="ecran-3"  class="caroussel__img">
-                <img src="public/img/img/car-3.jpg" alt="école de croismare">
-                <figcaption>École de Croismare</figcaption>
-            </figure>
-        </div>
+        <carrousel x-data="{hrefCourant: '#ecran-1',}">
+            <div class="caroussel" x-ref="parent" @scroll=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel__img">
+                    <figure>
+                        <img src="public/img/img/car-1.jpg" alt="image ecran 1">
+                        <figcaption>Poste à essence Socony-Vaccum</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel__img">
+                    <figure>
+                        <img src="public/img/img/car-2.jpg" alt="image ecran 2">
+                        <figcaption>Maison du peuple, Clich</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel__img">
+                    <figure>
+                        <img src="public/img/img/car-3.jpg" alt="image ecran 3">
+                        <figcaption>École de Croismare</figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <ul class="caroussel-indic">
-            <li> <a href="#" class="caroussel-indic__active"></a> </li>
-             <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-            <li> <a href="#" class="caroussel-indic__inactive"></a> </li>
-        </ul>
+            <ul class="caroussel__links">
+                <li><a href="#ecran-1" class="caroussel__indic" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
+                <li><a href="#ecran-2" class="caroussel__indic" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
+                <li><a href="#ecran-3" class="caroussel__indic" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
+            </ul>
+            
+        </carrousel>
 
         <section class="card card--black">
             <h1 class="card__h1">L'Exposition</h1>

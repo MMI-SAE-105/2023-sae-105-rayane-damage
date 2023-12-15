@@ -1,0 +1,21 @@
+.caroussel {
+    display: flex;
+    width: 100%;
+}
+
+.caroussel__img{
+    width: 100%;
+    flex: none;
+}
+
+.caroussel__links{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: 32px;
+}
+.caroussel__indic{
+    background-color: var(--white);
+    height: 32px;
+    width: 32px;
+}
