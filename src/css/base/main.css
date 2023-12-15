@@ -60,3 +60,8 @@ em{
 strong{
     font-weight: 500;
 }
+
+.noscroll,
+.noscroll body{
+    overflow: hidden;
+}
