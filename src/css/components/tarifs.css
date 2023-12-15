@@ -35,3 +35,6 @@
 .tarifs__item:last-child{
     height: 24px;
 }
+.tarifs__item--unfolded{
+    overflow: visible;
+}
