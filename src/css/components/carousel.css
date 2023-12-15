@@ -1,5 +1,6 @@
 .caroussel {
     display: flex;
+    overflow: hidden;
     height: 56vw;
     width: 100%;
     overflow-x: scroll;
@@ -9,6 +10,8 @@
 .carrousel__img{
     width: 100%;
     flex: none;
+    align-self: center;
+    scroll-snap-align: start;
 }
 
 
