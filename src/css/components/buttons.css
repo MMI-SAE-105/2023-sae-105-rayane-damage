@@ -80,6 +80,14 @@
     border: 8px solid var(--gray-light);
 }
 
+
+.piece__btn{
+    display: flex;
+    margin: var(--space1x);
+    margin-top: var(--space2x);
+}
+
+
 .footer__btn{
     font-family: var(--btn);
     font-size: var(--btnsize);
