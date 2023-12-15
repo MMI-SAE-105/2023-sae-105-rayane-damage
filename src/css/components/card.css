@@ -1,8 +1,14 @@
 .card{
     display: grid;
     margin: 6.4%;
+    padding: var(--space1x);
+    height: 208px;
 
     background-color: var(--brown);
+}
+
+.card--black{
+    background-color: var(--black);
 }
 
 .card__h1{
