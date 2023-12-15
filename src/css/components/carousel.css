@@ -1,5 +1,6 @@
 .caroussel {
     display: flex;
+    height: 56vw;
     width: 100%;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
