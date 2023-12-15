@@ -2,11 +2,11 @@
     display: flex;
     width: 100%;
 }
-
-.caroussel__img{
+.carrousel__img{
     width: 100%;
     flex: none;
 }
+
 
 .caroussel__links{
     display: flex;
@@ -15,6 +15,7 @@
     height: 32px;
 }
 .caroussel__indic{
+    display: block;
     background-color: var(--white);
     height: 32px;
     width: 32px;
