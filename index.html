@@ -34,7 +34,7 @@
         </section>
 
         <carrousel x-data="{hrefCourant: '#ecran-1',}">
-            <div class="caroussel" x-ref="parent" @scroll=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+            <div class="caroussel" x-ref="parent" @scroll.debounce.10ms.passive=" hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                 <div id="ecran-1" class="carrousel__img">
                     <figure>
                         <img src="public/img/img/car-1.jpg" alt="image ecran 1">
