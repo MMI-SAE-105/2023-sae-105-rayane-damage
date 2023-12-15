@@ -1,4 +1,6 @@
 .caroussel {
+    position: relative;
+    margin-top: var(--space4x);
     display: flex;
     overflow: hidden;
     height: 56vw;

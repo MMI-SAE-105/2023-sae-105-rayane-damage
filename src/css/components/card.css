@@ -1,7 +1,9 @@
 .card{
+    position: relative;
     display: grid;
     margin: 6.4%;
     padding: var(--space1x);
+    padding-right: 0;
     height: 208px;
 
     background-color: var(--brown);
@@ -11,8 +13,10 @@
     background-color: var(--black);
 }
 
+
 .card__h1{
     margin: 0;
+    margin-left: var(--space1x);
     font-family: var(--h1);
     font-size: var(--h1size);
     font-weight: 600;
@@ -20,6 +24,7 @@
     letter-spacing: var(--h1ls);
 }
 .card__h2{
+    margin-left: var(--space1x);
     font-family: var(--p);
     font-size: var(--h2size);
     font-weight: 300;
