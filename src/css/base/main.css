@@ -87,4 +87,10 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    margin: var(--space4x);
+}
+.btn404{
+    top: 50vh;
+    align-self: center;
 }
