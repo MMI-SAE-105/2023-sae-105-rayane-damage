@@ -14,7 +14,7 @@ body {
     font-size: var(--psize);
     font-weight: 300;
     line-height: 1;
-    background-color: var(--brown);
+    background-color: hsl(35, 40%, 23%);
 }
 li{
     list-style-type: none;
