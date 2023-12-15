@@ -22,6 +22,7 @@
     position: relative;
     width: 177px;
     padding-left: var(--space3x);
+    line-height: var(--bodyheight);
 }
 .tarifs__prices{
     font-weight: 400;
@@ -31,10 +32,17 @@
     height: 16px;
     margin-bottom: 16px;
     overflow: hidden;
+    transition: all .4s ease-in-out;
 }
 .tarifs__item:last-child{
-    height: 24px;
+    height: 26px;
+}
+.tarifs__item:last-child:hover{
+    height: 28px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
 }
 .tarifs__item--unfolded{
     overflow: visible;
+    margin-bottom: 117px;
 }

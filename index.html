@@ -87,7 +87,7 @@
                     <li class="tarifs__item">Tarif Réduit</li>
                     <li class="tarifs__item">Réduction 13-25 ans</li>
                     <li class="tarifs__item">Fondation Cartier Pass</li>
-                    <li class="tarifs__item" :class="unfolded ? 'tarifs__item--unfolded' : '' ">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
+                    <li class="tarifs__item" :class="unfolded ? 'tarifs__item--unfolded' : '' " @click="unfolded=!unfolded">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants </li>
                 </ul>
 
                 <ul class="tarifs__prices">
