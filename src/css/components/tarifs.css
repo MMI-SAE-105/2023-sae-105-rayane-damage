@@ -30,4 +30,8 @@
 .tarifs__item{
     height: 16px;
     margin-bottom: 16px;
+    overflow: hidden;
+}
+.tarifs__item:last-child{
+    height: 24px;
 }
