@@ -1,3 +1,16 @@
+.card__btn{
+    font-family: var(--btn);
+    font-size: var(--btnsize);
+    font-weight: 700;
+    letter-spacing: var(--h3ls);
+    text-transform: uppercase;
+    color: var(--white);
+
+    justify-self: end;
+    align-self: flex-end;
+}
+
+
 .footer__btn{
     font-family: var(--btn);
     font-size: var(--btnsize);
